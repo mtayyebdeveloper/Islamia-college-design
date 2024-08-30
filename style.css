@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-color: rgb(216,216,216);
+    font-family: 'Poppins', sans-serif;
+}
+.full-container{
+    width: 85%;
+    background-color: white;
+    margin: auto;
+}
+.full-container header section .header-top-sec{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+.full-container header section .header-bottom-sec{
+    margin: 5px 10px;
+    float: right;
+}
+.full-container header section .header-bottom-sec .input-sec{
+    margin: 0 5px;
+}
+.full-container header section .header-bottom-sec .input-sec input{
+    width:20vw;
+    padding: 5px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.212);
+    color: black;
+    margin: 0 3px;
+}
+.full-container header section .header-bottom-sec .input-sec button{
+    padding: 4px 30px;
+    border: 1px solid darkblue;
+    background-color: rgb(11,11,69);
+    color: white;
+    cursor: pointer;
+}
+.full-container header section .header-bottom-sec .btns-sec {
+    position: relative;
+    left: 1rem;
+}
+.full-container header section .header-bottom-sec .btns-sec button{
+    padding: 5px 6px;
+    background-color: rgb(11,11,69);
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    margin: 5px 3px;
+}
+.full-container header section .header-bottom-sec .btns-sec button a{
+    color: white;
+}
+.full-container header section .header-bottom-sec .btns-sec button:hover{
+    background-color: #2e6da4;
+    border: #2e6da4;
+}
+.full-container header section nav{
+    margin-top: 4.7rem;
+} 
+.full-container header section nav .top-menus-sec ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+    background-color: rgb(102,0,0);
+}
+.full-container header section nav .top-menus-sec ul li{
+    padding: 5px 10px;
+    font-size: 14px;
+    border-right: 2px solid white;
+}
+.full-container header section nav .top-menus-sec ul .down-item-list:hover .down-list{
+    display: block;
+}
+.full-container header section nav .top-menus-sec ul .down-item-list .down-list{
+    width: 15rem;
+    font-family: sans-serif;
+    display: none;
+    position: absolute;
+    border: 1px solid white;
+    z-index: 1;
+    margin-left: -10px;
+    margin-top: 5px;
+}
+.full-container header section nav .top-menus-sec ul .down-item-list .down-list li{
+    border-bottom: 2px solid white;
+    border-right: 0;
+    padding: 10px 10px;
+}
+.full-container header section nav .top-menus-sec ul .down-item-list .down-list li a{
+    color: white;
+}
+
+.full-container header section nav .top-menus-sec ul li:hover{
+    background-color: #113cb3;
+}
+.full-container header section nav .top-menus-sec ul li a{
+    color: white;
+}
+.full-container main section .main-sec-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.full-container main section .main-sec-container .left-side-bar{
+    width: 65%;
+}
+.full-container main section .main-sec-container .left-side-bar .top-slider{
+    background-image: url(imgs/27th_syndicate.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 22rem;
+    animation: imgchange 50s linear infinite;
+}
+@keyframes imgchange{
+    0%{
+        background-image: url(imgs/27th_syndicate.jpg);
+    }
+    25%{
+        background-image: url(imgs/independance_day-21.jpg);
+    }
+    50%{
+        background-image: url(imgs/fakhar_zaman_cricketer.jpg);
+    }
+    75%{
+        background-image: url(imgs/tree_plantation_ics_212.jpeg);
+    }
+    100%{
+        background-image: url(imgs/ipe_qec_20222.png);
+    }
+
+}
+.full-container main section .main-sec-container .left-side-bar .about-p{
+    display: flex;
+    justify-content: space-between;
+}
+.full-container main section .main-sec-container .left-side-bar .about-p .person{
+    margin: 10px 10px;
+}
+.full-container main section .main-sec-container .left-side-bar .about-p .person img{
+    float: right;
+    margin-top: 5px;
+}
+.full-container main section .main-sec-container .left-side-bar .about-p .person button{
+    padding: 5px 10px;
+    background: none;
+    border: 2px solid darkgray;
+    border-radius: 5px;
+}
+.full-container main section .main-sec-container .left-side-bar .about-p .person button:hover{
+    background-color: rgb(102,0,0);
+    color: white;
+}
+
+.full-container main section .main-sec-container .right-side-bar{
+    width: 33%;
+}
+.full-container main section .main-sec-container .right-side-bar .news marquee{
+    height: 17rem;
+}
+.full-container main section .main-sec-container .right-side-bar .important-links .im-l-btn{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.full-container main section .main-sec-container .right-side-bar .important-links .im-l-btn a{
+    padding: 4px 5px;
+    background-color: rgb(0,0,51);
+    margin: 3px 3px;
+    color: white;
+    border: 1px solid darkblue;
+    border-radius: 3px;
+}
+.full-container main section .main-sec-container .right-side-bar .important-links .im-l-btn a:hover{
+    background-color: #2e6da4;
+}
+.full-container main section .main-sec-container .right-side-bar .f-img img{
+    height: 6rem;
+    width: 100%;
+}
+footer section .footer-sec{
+    background-color: rgb(102,0,0);
+    color: white;
+    height: 6rem;
+}
+footer section .footer-sec .f-menus ul{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+footer section .footer-sec .f-menus ul li{
+    margin: 10px 0px;
+    padding: 0 6px;
+    border-right: 2px solid white;
+    font-size: 14px;
+}
+footer section .footer-sec .f-menus ul li a{
+    color: white;
+}
+footer section .footer-sec .f-copyright p{
+    text-align: center;
+}
+
+
+
+
